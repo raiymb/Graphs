@@ -11,6 +11,10 @@ public class Main {
         System.out.println("Dijkstra:");
         Search<String> djk = new DijkstraSearch<>(graph, "Almaty");
         outputPath(djk, "Kyzylorda");
+        System.out.println();
+        System.out.println("BFS:");
+        Search<String> bfs = new BreadthFirstSearch<>(graph, "Almaty");
+        outputPath(bfs, "Kyzylorda");
     }
 
     public static void outputPath(Search<String> search, String key) {
